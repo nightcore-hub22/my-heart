@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Simple Heart Beat</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff0f6;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* หัวใจใหญ่ */
+.heart{
+    position:relative;
+    font-size:260px;
+    line-height:1;
+    color:#ff4da6;
+    text-align:center;
+    filter: drop-shadow(0 8px 15px rgba(0,0,0,0.15));
+    animation: beat 1.6s ease-in-out infinite;
+}
+
+/* ชื่อ */
+.name{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:48px;
+    font-weight:700;
+    color:white;
+    letter-spacing:3px;
+    text-shadow:0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* หัวใจเต้นแบบนุ่ม */
+@keyframes beat{
+    0%   { transform: scale(1); }
+    20%  { transform: scale(1.05); }
+    40%  { transform: scale(1); }
+    60%  { transform: scale(1.04); }
+    100% { transform: scale(1); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="heart">
+    ❤
+    <span class="name">ตอง</span>
+</div>
+
+</body>
+</html>
